@@ -1188,6 +1188,20 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   max-inline-size: 44ch;
 }
 
+/* Careers page — single Dusk accent is the mailto: link.
+   Reused class so a future Contact page can pick it up too. */
+.email-dusk {
+  color: var(--dusk);
+  border-block-end: 1px solid var(--dusk);
+  padding-block-end: 2px;
+  transition: color var(--dur) var(--ease-out),
+              border-block-end-color var(--dur) var(--ease-out);
+}
+.email-dusk:hover {
+  color: var(--dusk-pale);
+  border-block-end-color: var(--dusk-pale);
+}
+
 /* Contact page */
 .contact-grid {
   display: grid;
