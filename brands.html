@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<!--
+  ============================================================
+  AWR TRADING — Our Brands (brands.html)
+  ============================================================
+  Features ONE brand: nuff.
+  Header + footer are intentionally identical to index.html.
+  If you edit them, edit them in both pages so they stay in sync.
+  ============================================================
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ── SEO ─────────────────────────────────────────────── -->
+  <title>Our brands — AWR Trading</title>
+  <meta name="description" content="AWR builds a portfolio of consumer brands. Our flagship: nuff — thoughtfully designed everyday products for the modern MENA consumer.">
+  <link rel="canonical" href="https://awrtrading.com/brands.html">
+
+  <!-- ── Open Graph / social ─────────────────────────────── -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AWR Trading">
+  <meta property="og:title" content="Our brands — AWR Trading">
+  <meta property="og:description" content="Our flagship: nuff. Thoughtfully designed everyday products for the modern MENA consumer.">
+  <meta property="og:url" content="https://awrtrading.com/brands.html">
+  <meta property="og:image" content="https://awrtrading.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our brands — AWR Trading">
+  <meta name="twitter:description" content="Our flagship: nuff. Thoughtfully designed everyday products for the modern MENA consumer.">
+  <meta name="twitter:image" content="https://awrtrading.com/og-image.jpg">
+
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- ── Fonts ───────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       HEADER / NAV  (identical on every page)
+       ============================================================ -->
+  <header class="site-header site-header--solid" data-header>
+    <div class="container site-header__inner">
+      <a href="index.html" class="wordmark" aria-label="AWR Trading — Home">
+        <span class="wordmark__a">AWR</span><span class="wordmark__dot">.</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+
+        <ul class="site-nav__list" id="primary-menu" data-nav-menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="brands.html" aria-current="page">Brands</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         PAGE HERO
+         EDITABLE COPY: kicker, title, lead.
+         ============================================================ -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <p class="eyebrow page-hero__kicker reveal">
+          <span class="eyebrow__rule" aria-hidden="true"></span>
+          Our brands
+        </p>
+        <h1 class="display-lg reveal">
+          Brands we build<br>and back<span class="accent-dot">.</span>
+        </h1>
+        <p class="lead reveal" style="margin-block-start: var(--space-6);">
+          AWR builds a portfolio — each brand created to lead its
+          category, not just enter it.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BRAND FEATURE — nuff
+         The section's single Dusk accent is the "Live" pill.
+         CTA is plain text "Coming soon" (NOT a link) since the
+         nuff site isn't live yet. When the nuff site is live,
+         replace .brand-feature__soon with:
+           <a href="https://nuff.example/" class="brand-feature__cta" rel="noopener">
+             Visit nuff <span aria-hidden="true">&rarr;</span>
+           </a>
+         To add a real logo image, replace the wordmark <span>
+         with: <img class="brand-feature__wordmark" src="brands/nuff.svg" alt="nuff">
+         ============================================================ -->
+    <section class="section">
+      <div class="container">
+
+        <article class="brand-feature reveal" aria-labelledby="brand-nuff">
+
+          <div class="brand-feature__visual">
+            <!-- Status pill — the single Dusk accent in this section -->
+            <span class="brand-feature__pill" aria-label="Status: Live">Live</span>
+
+            <!-- Wordmark placeholder. Swap for <img> when real logo lands. -->
+            <span class="brand-feature__wordmark" id="brand-nuff">nuff</span>
+          </div>
+
+          <div class="brand-feature__body">
+            <p class="brand-feature__category">Lifestyle essentials</p>
+
+            <h2 class="brand-feature__tagline">Meet&nbsp;Yourself.</h2>
+
+            <p class="brand-feature__desc">
+              Our flagship consumer brand. nuff makes thoughtfully
+              designed, non-electric everyday products — stripped
+              back, calm, devoid of excess. No noise, just enough.
+              Built design-first for the modern MENA consumer.
+            </p>
+
+            <!-- Plain text — NOT a link, intentionally. -->
+            <span class="brand-feature__soon" aria-label="The nuff site is coming soon">
+              Coming soon
+            </span>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER  (identical on every page — keep in sync)
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__minimal">
+
+      <div class="site-footer__brand">
+        <span class="wordmark wordmark--footer">AWR<span class="wordmark__dot">.</span></span>
+        <p class="site-footer__tag">
+          Sourcing. Branding. Distribution. MENA.
+        </p>
+      </div>
+
+      <nav class="site-footer__inline-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="brands.html">Brands</a>
+      </nav>
+
+    </div>
+
+    <div class="container site-footer__base">
+      <p>&copy; 2026 AWR Trading. All rights reserved.</p>
+      <p>Based in Dubai, United Arab Emirates.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
