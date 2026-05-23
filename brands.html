@@ -32,6 +32,13 @@
 
   <meta name="theme-color" content="#0A0A0A">
 
+  <!-- ── Favicons (generated from Logo.png on a Void square) ── -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
   <!-- ── Fonts ───────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,8 +55,9 @@
        ============================================================ -->
   <header class="site-header site-header--solid" data-header>
     <div class="container site-header__inner">
+      <!-- Logo wordmark — see index.html for swap notes. -->
       <a href="index.html" class="wordmark" aria-label="AWR Trading — Home">
-        <span class="wordmark__a">AWR</span><span class="wordmark__dot">.</span>
+        <img src="Logo.png" alt="AWR Trading" class="wordmark__img">
       </a>
 
       <nav class="site-nav" aria-label="Primary">
@@ -146,17 +154,22 @@
     <div class="container site-footer__minimal">
 
       <div class="site-footer__brand">
-        <span class="wordmark wordmark--footer">AWR<span class="wordmark__dot">.</span></span>
+        <span class="wordmark wordmark--footer">
+          <img src="Logo.png" alt="AWR Trading" class="wordmark__img">
+        </span>
         <p class="site-footer__tag">
           Sourcing. Branding. Distribution. MENA.
         </p>
       </div>
 
-      <nav class="site-footer__inline-nav" aria-label="Footer">
-        <a href="index.html">Home</a>
-        <span aria-hidden="true">/</span>
-        <a href="brands.html">Brands</a>
-      </nav>
+      <div class="site-footer__meta">
+        <nav class="site-footer__inline-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="brands.html">Brands</a>
+        </nav>
+        <a class="site-footer__email" href="mailto:info@awr.llc">info@awr.llc</a>
+      </div>
 
     </div>
 
